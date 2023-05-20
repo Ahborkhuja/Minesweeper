@@ -34,7 +34,6 @@ function setMines() {
     }
 }
 
-
 function startGame() {
     document.getElementById("mines-count").innerText = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
@@ -85,7 +84,6 @@ function clickTile() {
     }
 
     if (minesLocation.includes(tile.id)) {
-        // alert("GAME OVER");
         gameOver = true;
         revealMines();
         return;
